@@ -1,0 +1,16 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="64" fill="#FF0000"/>
+  
+  <!-- Main square (large video player) -->
+  <rect x="24" y="24" width="64" height="48" rx="4" fill="white" stroke="none"/>
+  
+  <!-- Mini square (small player in bottom right corner area) -->
+  <rect x="72" y="80" width="32" height="24" rx="2" fill="white" stroke="none"/>
+  
+  <!-- Play button in main square -->
+  <polygon points="44,40 44,56 60,48" fill="#FF0000"/>
+  
+  <!-- Play button in mini square -->
+  <polygon points="82,87 82,97 92,92" fill="#FF0000"/>
+</svg>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Mini Player Button Restorer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 720px;
+            height: 320px;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            font-size: 14px;
+            line-height: 1.4;
+            background: #1a1a1a;
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #333;
+        }
+
+        .icon {
+            width: 36px;
+            height: 36px;
+            margin-right: 16px;
+            background: #ffffff;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #ffffff;
+            line-height: 1.2;
+        }
+
+        .status {
+            background: #ffffff;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 14px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .status-icon {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+            color: #000000;
+        }
+
+        .status-text {
+            font-size: 14px;
+            color: #000000;
+            font-weight: 500;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            align-items: start;
+        }
+
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .info {
+            background: #2a2a2a;
+            border-radius: 8px;
+            padding: 14px;
+            border: 1px solid #333;
+        }
+
+        .info-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #ffffff;
+            font-size: 15px;
+        }
+
+        .info-text {
+            font-size: 13px;
+            color: #cccccc;
+            line-height: 1.5;
+        }
+
+        .shortcut {
+            background: #1a1a1a;
+            border: 1px solid #444;
+            border-radius: 4px;
+            padding: 3px 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #333;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .feature-list li {
+            font-size: 13px;
+            color: #cccccc;
+            margin-bottom: 6px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .feature-list li::before {
+            content: "●";
+            position: absolute;
+            left: 0;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .donate-section {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 18px;
+            margin-bottom: 16px;
+            text-align: center;
+            color: #000;
+            border: 1px solid #333;
+        }
+
+        .donate-title {
+            font-weight: 600;
+            font-size: 15px;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .donate-text {
+            font-size: 12px;
+            line-height: 1.5;
+            margin-bottom: 14px;
+            color: #333;
+        }
+
+        .donate-button {
+            display: inline-block;
+            background: #000;
+            border: 1px solid #333;
+            border-radius: 6px;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .donate-button:hover {
+            background: #333;
+            transform: translateY(-1px);
+        }
+
+        .donate-button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="icon">▶</div>
+        <div class="title">Mini Player Restorer</div>
+    </div>
+
+    <div class="status">
+        <svg class="status-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M11,16.5L18,9.5L16.59,8.09L11,13.67L7.91,10.59L6.5,12L11,16.5Z"/>
+        </svg>
+        <span class="status-text">Extension Active</span>
+    </div>
+
+    <div class="content-grid">
+        <div class="left-column">
+            <div class="info">
+                <div class="info-title">How it works</div>
+                <div class="info-text">
+                    This extension automatically adds the missing mini player button back to YouTube's video controls.
+                </div>
+                <ul class="feature-list">
+                    <li>Restores the mini player button</li>
+                    <li>Works with <span class="shortcut">i</span> keyboard shortcut</li>
+                    <li>Matches YouTube's design</li>
+                    <li>Auto-updates on page navigation</li>
+                </ul>
+            </div>
+            
+            <div class="info">
+                <div class="info-title">Usage</div>
+                <div class="info-text">
+                    Click the mini player button in YouTube's control bar or press <span class="shortcut">i</span> to activate the mini player.
+                </div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="donate-section">
+                <div class="donate-title">Support Development</div>
+                <div class="donate-text">
+                    It costs time and money to develop for the community. While I don't expect donations, if you'd like to help out, I'd be forever grateful.
+                </div>
+                <a href="https://paypal.me/harryroseaccounts" target="_blank" class="donate-button">
+                    ❤️ Donate via PayPal
+                </a>
+            </div>
+            
+            <div class="footer">
+                Extension is working automatically.<br>
+                No additional configuration needed.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
