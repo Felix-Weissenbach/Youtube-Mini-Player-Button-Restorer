@@ -3,9 +3,6 @@
   "name": "YouTube Mini Player Button Restorer",
   "version": "1.0.0",
   "description": "Brings back the missing mini player button on YouTube with the same 'i' key functionality.",
-  "permissions": [
-    "activeTab"
-  ],
   "host_permissions": [
     "*://*.youtube.com/*"
   ],
