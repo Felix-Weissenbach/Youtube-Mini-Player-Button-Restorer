@@ -26,7 +26,7 @@ YouTube recently removed the mini player button from their video controls, makin
 
 ### Option 2: Chrome Web Store (When Published)
 
-Install directly from the Chrome Web Store (link to be added when published).
+Install directly from the Chrome Web Store: [Link to Extension](https://chromewebstore.google.com/detail/feheoicbfihoddeibbkejjfpmdbiphcb?utm_source=item-share-cb)
 
 ## Usage
 
