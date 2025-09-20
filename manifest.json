@@ -23,7 +23,7 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "browsers_specific_settings": {
+  "browser_specific_settings": {
     "gecko": {
       "id": "youtube-mini-player-button-restorer@felixweissenbach.net",
       "strict_min_version": "142.0"
