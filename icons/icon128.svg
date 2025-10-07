@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 128 128"
+     width="128"
+     height="128"
+     fill="none"
+     stroke="red"
+     stroke-width="13.5"
+     stroke-linecap="square"
+     stroke-linejoin="miter"
+     style="display:block">
+  <!-- Outer rectangle (screen) -->
+  <rect x="8" y="16" width="112" height="96" rx="8" ry="8"/>
+  <!-- Mini rectangle (miniplayer preview) -->
+  <rect x="72" y="76" width="40" height="28" fill="red" stroke="none" rx="2.25" ry="2.25"/>
+  <!-- Play button (triangle) -->
+  <polygon points="40,48 40,80 64,64" fill="red"/>
+</svg>
