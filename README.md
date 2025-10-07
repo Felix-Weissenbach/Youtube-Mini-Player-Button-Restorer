@@ -1,6 +1,6 @@
 # YouTube Mini Player Button Restorer
 
-A Chrome extension that brings back the missing mini player button on YouTube videos.
+A Firefox extension that brings back the missing mini player button on YouTube videos.
 
 ## Overview
 
@@ -13,20 +13,18 @@ YouTube recently removed the mini player button from their video controls, makin
 - ✅ Seamlessly integrates with YouTube's design language
 - ✅ Works across all YouTube pages and navigation
 - ✅ Lightweight and performance-optimized
-- ✅ Chrome Web Store compliant
 
 ## Installation
 
-### Option 1: Load as Unpacked Extension (For Development/Testing)
+### Option 1: Load as Temporary Add-on (For Development/Testing)
 
-1. Open Chrome and navigate to `chrome://extensions/`
-2. Enable "Developer mode" in the top-right corner
-3. Click "Load unpacked" and select the extension folder
-4. The extension should now be active on YouTube
+1. Open Firefox and navigate to `about:debugging`
+2. Click "Load Temporary Add-on..." and select the manifest.json file inside the extension folder
+3. The extension should now be active on YouTube
 
-### Option 2: Chrome Web Store (When Published)
+### Option 2: Firefox Add-ons
 
-Install directly from the Chrome Web Store: [Link to Extension](https://chromewebstore.google.com/detail/feheoicbfihoddeibbkejjfpmdbiphcb?utm_source=item-share-cb)
+Install directly from the Firefox Add-on Store: [Link to Extension](https://addons.mozilla.org/en-US/firefox/addon/yt-mini-player-button-restorer/)
 
 ## Usage
 
@@ -40,7 +38,7 @@ Install directly from the Chrome Web Store: [Link to Extension](https://chromewe
 - **Manifest Version**: 3 (latest Chrome extension standard)
 - **Permissions**: Only requires `activeTab` and access to YouTube domains
 - **Content Security Policy**: Compliant with Chrome Web Store requirements
-- **Browser Compatibility**: Chrome 88+ (Manifest V3 requirement)
+- **Browser Compatibility**: Firefox 142.0+ (Manifest V3 requirement)
 
 ## File Structure
 
@@ -54,7 +52,7 @@ youtube-mini-player-extension/
 │   ├── icon16.png
 │   ├── icon48.png
 │   ├── icon128.png
-│   └── icon.svg
+│   └── miniplayer-icon.svg
 └── README.md              # This file
 ```
 
@@ -78,11 +76,9 @@ The extension uses a content script that:
 ## Compatibility
 
 - ✅ YouTube.com (all pages)
-- ✅ YouTube embedded videos
 - ✅ YouTube Music (where applicable)
 - ✅ Dark and light themes
 - ✅ All video qualities and formats
-- ✅ Mobile responsive design
 
 ## Known Issues
 
@@ -99,11 +95,9 @@ This project is released under the MIT License. See LICENSE file for details.
 
 ## Changelog
 
-### Version 1.0.0
-- Initial release
-- Basic mini player button restoration
-- Integration with existing `i` key functionality
-- Chrome Web Store compliance
+### Version 1.1.0
+- Fixed a bug that made it so that no icon was displayed
+- Added a new .svg icon
 
 ---
 

@@ -29,6 +29,12 @@
       "strict_min_version": "142.0"
     }
   },
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/miniplayer-icon.svg"],
+      "matches": ["*://*.youtube.com/*"]
+    }
+  ],
   "author": "Felix Weissenbach (cloned from https://github.com/Harryrosestudios/YouTube-Mini-Player-Button-Restorer)",
   "homepage_url": "https://github.com/Felix-Weissenbach/Youtube-Mini-Player-Button-Restorer"
 }
