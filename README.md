@@ -95,9 +95,8 @@ This project is released under the MIT License. See LICENSE file for details.
 
 ## Changelog
 
-### Version 1.1.0
-- Fixed a bug that made it so that no icon was displayed
-- Added a new .svg icon
+### Version 1.1.1
+- All new icons
 
 ---
 
